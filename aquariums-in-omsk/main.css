@@ -27,10 +27,6 @@ h1, h2, h3, h4, h5, h6 {
    margin: 0 auto;
 }
 
-.content {
-    padding: 0 50px;
-}
-
 .basic_link {
    font-family: 'Roboto';
    font-size: 18px;
@@ -56,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*---Intro---*/
 .intro {
-    margin: 80px 0 60px;
+    margin: 80px 40px 60px;
     display: flex;
     justify-content: center;
 }
@@ -75,13 +71,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro__title-first {
-   font-size: 54px;
+   font-size: 52px;
    font-weight: bold;
    margin-bottom: 18px;
 }
 
 .intro__title-second {
-   font-size: 28px;
+   font-size: 26px;
    color: #404040;
 }
 
@@ -96,23 +92,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 480px;
 }
 
-/*-----Contacts------*/
-.contacts {
-    font-size: 24px;
-    line-height: 1.4;
-}
-
-.contacts__title {
-    font-size: 28px;
-    margin-bottom: 12px;
-}
 /*---Actual Info---*/
 .about_us {
     margin: 100px 0;
 }
 
 .about_us__inner {
-    margin: 10px 0;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
 }
@@ -122,24 +108,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
 }
 
+.potencial_clients,
 .about_us__desc {
     max-width: 600px;
     margin-left: 30px;
-    margin-right: 70px;
+    margin-right: 60px;
 }
 
-.about__call_us {
-    height: 70%;
+
+.about_us__contacts,
+.contacts {
+    min-width: 430px;
+    max-width: 540px;
 }
 
-.about__call_us--first {
-    margin-bottom: 50px;
+.contacts__title,
+.potencial_clients__title {
+    font-size: 28px;
+    margin-bottom: 12px;
 }
 
-.about_us__contacts {
-    max-width: 500px;
+/*-----Contacts------*/
+.contacts {
+    font-size: 24px;
+    line-height: 1.4;
 }
-
 
 /*---Footer---*/
 .footer {
@@ -268,6 +261,7 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background-color: rgba(255, 255, 255, 0.9);
 }
+
 /*---Adaptive---*/
 @media(max-width: 1200px) {
     .intro__info {
@@ -275,18 +269,16 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
        margin: 0px 0px 0 25px;
     }
     .intro__title-first {
-        font-size: 42px;
+        font-size: 40px;
     }
     .intro__title-second {
-        font-size: 28px;
+        font-size: 24px;
     }
     .intro__img {
-        width: 640px;
-        height: 480px;
+        width: 480px;
+        height: 360px;
     }
-    .content {
-        padding: 0 40px;
-    }
+
     .slides {
         width: 960px;
         height: 720px;
@@ -301,6 +293,43 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
         text-align: center;
         line-height: 720px;
     }
+    
+/*---Actual Info---*/
+.potencial_clients,
+.about_us__desc {
+    margin-left: 80px;
+    margin-right: 30px;
+}
+
+.contacts,
+.about_us__contacts {
+    min-width: 420px;
+    max-width: 500px;
+}
+    
+/*---Potencial clients---*/
+.contacts__title,
+.potencial_clients__title {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+/*---Footer---*/
+.footer {
+   width: 100%;
+}
+
+.footer__inner {
+   background-color: #4a4a4a;
+   text-align: center;
+   color: #cbcbcb;
+   font-size: 22px;
+   
+}
+
+.footer__copyright {
+    padding: 12px 0 12px;
+}
 }
 
 @media(max-width: 1024px) {
@@ -315,12 +344,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     }
     
     .intro__img {
-        width: 480px;
-        height: 360px;
-    }
-    
-    .content {
-        padding: 0 30px;
+        width: 400px;
+        height: 300px;
     }
     
     .nav label {
@@ -328,9 +353,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
         font-size: 120pt;
         text-align: center;
         line-height: 600px;
-    }
-    .content {
-        padding: 0;
     }
     
     .slides {
@@ -343,6 +365,40 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     }
     .about_us {
         margin-top: 80px;
+    }
+    
+    /*---Actual Info---*/
+    .about_us {
+        margin: 100px 0;
+        margin-top: 40px;
+    }
+
+    .about_us__inner {
+        margin: 40px 0;
+    }
+
+    .about_us__title {
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+
+    .potencial_clients,
+    .about_us__desc {
+        max-width: 600px;
+        margin-left: 40px;
+        margin-right: 32px;
+    }
+
+    .about_us__contacts,
+    .contacts {
+        min-width: 340px;
+        max-width: 500px;
+    }
+
+    .contacts__title,
+    .potencial_clients__title {
+        font-size: 28px;
+        margin-bottom: 12px;
     }
 }
 
@@ -395,34 +451,43 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
         margin-bottom: 28px;
     }
     
-    .about_us {
-        margin-top: 20px;
+    /*---Actual Info---*/
+        .about_us__inner {
+        flex-direction: column;
     }
-    
+    .about_us {
+        margin: 60px 0;
+    }
+
+    .about_us__inner {
+        margin: 0;
+    }
+
+    .about_us__title,
+    .contacts__title,
+    .potencial_clients__title{
+        font-size: 34px;
+        margin-bottom: 26px;
+    }
+
+    .potencial_clients,
     .about_us__desc {
-        margin-right: 36px;
+        max-width: 87%;
+        width: 100%;
+        margin: 30px 40px;
+    }
+
+    .about_us__contacts,
+    .contacts {
+        margin: 0 40px;
+        width: 80%;
+        max-width: 80%;
     }
 }
 
-@media(max-width: 800px) {
-    .content {
-        width: 100%;
-        padding: 0;
-    }
-    .about_us__inner {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    }
-    .about_us__desc {
-        max-width: 100%;
-    }
-
+@media(max-width: 800px) {    
     .about__call_us {
         max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     
     .footer__inner {
@@ -439,10 +504,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     
     .about__call_us--first {
         margin-bottom: 32px;
-    }
-    
-    .contacts__title {
-        font-size: 42px;
     }
 }
 
@@ -465,10 +526,21 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 
 @media(max-width: 480px) {
-    
+    .nav label {
+        width: 60px;
+        font-size: 80pt;
+        text-align: center;
+        line-height: 320px;
+    }
 }
 
 @media(max-width: 320px) {
+    .nav label {
+        width: 55px;
+        font-size: 66pt;
+        text-align: center;
+        line-height: 240px;
+    }
     .slides {
         width: 320px;
         height: 240px;
