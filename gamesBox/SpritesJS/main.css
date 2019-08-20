@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgba(0,0,100,0.05);
+}
+
+button {
+	height: 30px;
+	width: 90px;
+	background: rgb(240,240,255);
+}
+
+#root {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+}
+#rightcol {
+	position:relative;
+	overflow: hidden;
+}
+#centercol {
+	width: 405px;
+	position: relative;
+	overflow: hidden;
+	float:left;
+}
+.content {
+	margin: 5px;
+}

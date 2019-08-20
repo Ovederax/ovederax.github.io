@@ -1,0 +1,62 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	margin: 5px 5px 10px 0px;
+	padding: 0 0;
+}
+
+#page {
+	margin: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*---Header---*/
+.header {
+    padding: 15px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+iframe {
+	border: 0px;
+}
+.content__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select_game button {
+    display: block;
+    height: 30px;
+	width: 90px;
+	margin-bottom: 5px;
+	background: rgb(240,240,255)
+}
+#wraper {
+	max-width: 960px;
+	margin: auto;
+	background-color: white;
+}
+
+#header {
+	height: 100%;
+	background: rgba(0,0,255,0.12);
+}
+
+footer {
+	max-width: 960px;
+	margin: auto;
+	background: #7e7e7e;
+	color: #dbdbdb;
+	font-size: 11px;
+    
+}
